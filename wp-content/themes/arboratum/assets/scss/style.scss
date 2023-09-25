@@ -1,0 +1,50 @@
+/*!
+	Theme Name: Arboratum
+	Description: Arboratum
+	Author: Arboratum
+	Theme URL: http://arboratum.com
+	Author URI: https://arboratum.com
+	Version: 1.1.0
+	License: GPL-3.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+
+	Template: genesis
+*/
+
+@import 'mixins/bourbon/_bourbon';
+//Variables
+@import 'variables/var-units';
+@import 'variables/var-type';
+@import 'variables/var-color';
+//Materialize
+@import 'vendor/materialize';
+//Animation
+@import 'vendor/animations';
+//Components
+@import 'partials/reset';
+@import 'partials/structures';
+@import 'partials/defaults';
+@import 'partials/type';
+@import 'partials/objects';
+@import 'partials/tables';
+@import 'partials/forms';
+@import 'partials/accessibility';
+@import 'partials/wordpress';
+@import 'partials/navigation';
+@import 'partials/content';
+@import 'partials/sidebars';
+@import 'partials/widgets';
+@import 'partials/genesis';
+@import 'partials/plugins';
+@import 'partials/genesis';
+@import 'partials/footer';
+//Pages
+@import 'pages/home';
+@import 'pages/team';
+@import 'pages/services';
+@import 'pages/about';
+@import 'pages/blog';
+@import 'pages/blog-post';
+@import 'pages/service-post';
+@import 'pages/solutions';
+@import 'pages/contact';

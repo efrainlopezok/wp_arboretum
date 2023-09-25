@@ -1,0 +1,103 @@
+.hero-2 {
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    &::after {
+        width: 100%;
+        position: absolute;
+        left: 0; 
+        top: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    .wrap {
+        position: relative;
+        z-index: 20;
+    }
+    h5 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 47px;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 1.5px;
+        line-height: 60px;
+    }
+}
+
+.wrap-services {
+    padding: 80px 0 60px;
+    overflow: hidden;
+    .services-image {
+        min-height: 390px;
+        background-size: cover;
+        background-position: center;
+        border-top: 15px solid #fdb714;
+    }
+    .services-content {
+        width: 520px;
+        max-width: 100%;
+        h2 {
+            margin-top: 0;
+            width: 425px;
+            max-width: 100%;
+        }
+        p {
+            font-size: 17px;
+            color: #4f4d4a;
+        }
+    }
+    &.services-1 {
+        background-color: #fff;
+    }
+    &.services-2 {
+        background-color: #f7f7f7;
+        .services-content {
+            margin-left: auto;
+        }
+    }
+}
+
+@media screen and (max-width: $break-medium) {
+    .hero-2 {
+        min-height: 350px;
+        h2 {
+            font-size: 30px;
+            line-height: 1.25em;
+        }
+    }
+}
+@media screen and (max-width: $break-small) {
+    .hero-2 {
+        min-height: 280px;
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .wrap-services {
+        padding: 30px 0 35px;
+        .services-content,
+        .row .col {
+            width: 100%;
+        }
+        .services-image {
+            min-height: 280px;
+            margin-bottom: 20px;
+        }
+        &.services-1 .row.valign-wrapper {
+            flex-direction: column-reverse;
+        }
+        &.services-2 .row.valign-wrapper {
+            flex-direction: column;
+        }
+    }
+}

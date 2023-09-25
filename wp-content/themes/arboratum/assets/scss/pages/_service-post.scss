@@ -1,0 +1,96 @@
+.servicepost-hero {
+    h1 {
+        width: calc(100% - 495px);
+    }
+
+}
+.section-service-single {
+    margin-bottom: 35px;
+    .cd-content {
+        p:first-child {
+            color: #706f6f;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+        p:not(:first-child) {
+            font-size: 17px;
+            color: #4f4d4a;
+            margin-bottom: 25px;
+        }
+        .block-text {
+            margin-bottom: 25px;
+        }
+    }
+}
+.ser-call-action {
+    min-height: 785px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .box-action {
+        text-align: center;
+        width: 950px;
+        max-width: 100%;
+        margin: 0 auto;
+        p {
+            width: 630px;
+            max-width: 100%;
+            margin: 0 auto 22px;
+        }
+        a {
+            color: #96c373;
+        }
+    }
+}
+.other-services {
+    padding: 100px 0;
+    .row {
+        .col {
+            padding-left: 15px;
+            padding-right: 15px;
+            .box-service {
+                min-height: 330px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-medium) {
+    .other-services {
+        padding: 60px 0;
+        .row {
+            .col {
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+                .box-service {
+                    min-height: 236px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-small) {
+    .section-service-single {
+        .cd-content {
+            p:first-child {
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+            }
+            p:not(:first-child) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .block-text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .ser-call-action {
+        min-height: 630px;
+    }
+    .other-services .box-service {
+        margin-bottom: 15px;
+    }
+}

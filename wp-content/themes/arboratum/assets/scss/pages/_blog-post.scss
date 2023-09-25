@@ -1,0 +1,113 @@
+.hero-blog-post {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 680px;
+}
+.section-post {
+    
+    .text-post {
+        p {
+            display: inline-block;
+            top: 75px;
+            left: 110px;
+            color: #da521f;
+            font-size: 20px;
+            line-height: 37px;
+            text-transform: capitalize;
+            line-height: 37px;
+            i{
+                margin-right: 10px;
+            }
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+    .post-title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #4f4d4a;
+    }
+    .content-post {
+        margin-bottom: 65px;
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        p {
+            color: #4f4d4a;
+            img {
+                margin-top:24px; 
+            }
+        }
+    }
+}
+.section-related-post{
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    border-top: 1px dashed #ddd;
+    h2{
+        text-align: center;
+        margin-bottom: 55px;
+        margin-top: 0;
+    }
+    .row>div.col {
+        padding-left: 15px;
+        padding-right: 15px;
+        .item-post {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: $break-medium) {
+    .hero-blog-post {
+        min-height: 400px;
+    }
+}
+@media screen and (max-width: $break-small) {
+    .hero-blog-post {
+        min-height: 350px;
+    }
+    .section-post .content-post {
+        p {
+            img {
+                margin: 24px 0;
+                height: 300px !important;
+                width: 100%;
+            }
+        }
+    }
+    .section-related-post{
+        padding: 40px 0 40px;
+        h3{
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        .row>div.col {
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+            margin-bottom: 15px;
+        }
+    }
+    .section-post {
+        .text-post {
+            p {
+                font-size: 17px;
+                i{
+                    margin-right: 8px;
+                }
+            }
+        }
+        .content-post {
+            margin-bottom: 65px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}

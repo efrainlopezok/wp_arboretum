@@ -1,0 +1,148 @@
+/*==============================
+=            Footer            =
+==============================*/
+
+.site-footer {
+    clear: both;
+    font-size: .8em;
+    overflow: hidden;
+    padding: 10px;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+/*----------  Widgets  ----------*/
+
+.footer-widgets {
+    clear: both;
+    overflow: hidden;
+    padding: 40px 0px;
+    background-image: url("assets/images/footer-bkg.jpg");
+    background-position: right;
+    background-color: #3f3f3f;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0;
+    // @include linear-gradient(left, rgba(244, 127, 32, 1) 0%, rgba(225, 94, 31, 1) 100%, $fallback: transparent);
+    .widget {
+        margin-bottom: 40px;
+    }
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    ul {
+        margin-left: 0px;
+        padding-left: 0px;
+        li {
+            list-style: none;
+            a {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    .gform_widget {
+        margin-bottom: 0;
+        form.gf_simple_horizontal {
+            position: relative;
+            .gform_body {
+                width: 100% !important;
+                .gf_simple_horizontal {
+                    padding-right: 0 !important;
+                }
+                input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+                    background-color: #fff;
+                    border: 0 none;
+                    height: 52px;
+                    margin-bottom: 0;
+                    padding-left: 20px;
+                    padding-right: 160px;
+                    border-radius: 30px;
+                    &:focus {
+                        outline: 0;
+                        border: 0 none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            .gform_footer {
+                input[type='submit'] {
+                    background-color: #fdb714;
+                    color: #fff !important;
+                    border: 0 none;
+                    padding: 16.5px;
+                    width: 155px;
+                    max-width: 100%;
+                    margin-right: 0;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+.wrap-footer {
+    padding: 16px 0;
+    .row {
+        margin-bottom: 0;
+        div[class*= 'col']:first-child {
+            font-size: 15px;
+            line-height: 28px;
+            p {
+                display: inline-block;
+                text-transform: capitalize;
+            }
+        }
+        div[class*= 'col']:last-child {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (min-width: 200px) {
+    .footer-widgets .gform_wrapper {
+        form.gf_simple_horizontal div.gform_body {
+            max-width: 100%;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        input:not([type=radio]):not([type=checkbox]):not([type=image]):not([type=file]) {
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        form.gf_simple_horizontal div.gform_footer.top_label {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: right;
+        }
+        .top_label .gfield_label {
+            display: none;
+        }
+        .top_label div.ginput_container,
+        ul li.gfield {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $break-small) {
+    .wrap-footer .row div[class*=col] {
+        text-align: center;
+    }
+}
